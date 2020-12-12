@@ -1,0 +1,22 @@
+.main-nav__list{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.main-nav__link{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.05px;
+  color: $color-header;
+  padding: 25px 23px ;
+}
+
+.main-nav__link:hover{
+  color: $color-header-hover;
+}
+
+.main-nav__link:active{
+  color: $color-header-active;
+}

@@ -1,10 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Nerds</title>
+  <meta charset="UTF-8">
+  <title>Нёрдс</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+        rel="stylesheet">
+  <link href="css/normalise.css">
+  <link href="scss/main.css" rel="stylesheet">
 </head>
-<body>
+<body class="body">
 
+<!----------header----------->
+
+<header class="header">
+  <div class="header__wrap container">
+    <div class="logo__wrap">
+      <a class="logo__link">
+        <img src="images/logo/header-logo.svg" width="160" height="65" alt="изображение логотипа нёрдс">
+      </a>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item item">
+          <a class="main-nav__link link" href="#">Студия</a>
+        </li>
+        <li class="main-nav__item item">
+          <a class="main-nav__link link" href="#">Клиенты</a>
+        </li>
+        <li class="main-nav__item item">
+          <a class="main-nav__link link" href="#">Магазин</a>
+        </li>
+        <li class="main-nav__item item">
+          <a class="main-nav__link link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="basket__wrap">
+      <a class="basket__link">Корзина</a>
+    </div>
+  </div>
+</header>
+
+<!---------main------>
+
+<main class="main">
+
+  <!--------main__title---------->
+
+  <h1 class="main__title visually-hidden">Дизайн студия Нёрдс</h1>
+
+  <!--------slider------------>
+
+  <section class="slider__section container">
+    <ul class="slider__list container">
+      <!---------1--------->
+      <li class="slider-flex__item">
+        <div class="slider-advantages__wrap">
+          <b class="slider-advantages-slogan">
+            Долго, дорого, скрупулезно.
+          </b>
+          <p class="slider-advantages__text">
+            Математически выверенный дизайн для вашего сайта или мобильного приложения.
+          </p>
+          <a class="slider-advantages__link link" href="#">УЗНАТЬ БОЛЬШЕ</a>
+        </div>
+        <div class="slider-picture__wrap">
+          <img src="images/slider/slider-picture1.jpg"
+               class="slider-picture__img" width="760"
+               height="431" alt="изображение планшета и смартфона">
+        </div>
+      </li>
+      <!---------2--------->
+      <li class="slider-flex__item visually-hidden">
+        <div class="slider-advantages__wrap">
+          <b class="slider-advantages-slogan">
+            Любим математику как никто другой
+          </b>
+          <p class="slider-advantages__text">
+            Никакого креатива, только математические формулы для расчета идеальных пропорций
+          </p>
+          <a class="slider-advantages__link link main-btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+        </div>
+        <div class="slider-picture__wrap">
+          <img src="images/slider/slider-picture2.jpg"
+               class="slider-picture__img" width="760"
+               height="431" alt="изображение двух планшетов">
+        </div>
+      </li>
+      <!---------3--------->
+      <li class="slider-flex__item visually-hidden">
+        <div class="slider-advantages__wrap">
+          <b class="slider-advantages-slogan">
+            Только ночь, только хардкор
+          </b>
+          <p class="slider-advantages__text">
+            Работать днем, как все? Мы против этого.
+            Ближе к полуночи работа только начинается.
+          </p>
+          <a class="slider-advantages__link link" href="#">УЗНАТЬ БОЛЬШЕ</a>
+        </div>
+        <div class="slider-picture__wrap">
+          <img src="images/slider/slider-picture3.jpg"
+               class="slider-picture__img" width="760"
+               height="431" alt="изображение планшета и смартфона">
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!---------features------>
+
+  <section class="features__section">
+    <ul class="features-card__list">
+      <li class="features-card__item">
+        <img src="images/features/features1.jpg"
+             class="features-card__img" width="300" height="146"
+             alt="изображение ноутбука">
+        <h2 class="features-card__title">Веб-сайты</h2>
+        <p class="features-card__text">
+          Мир никогда не будет прежним после того как увидит ваш сайт!
+        </p>
+        <a class="features-card__link" href="#">Заказать</a>
+      </li>
+    </ul>
+  </section>
+
+  <!---------services-------->
+
+  <section class="services__section">
+    <p class="services-slogan">
+      Мы — маленькая, но гордая дизайн-студия из Краснодара.
+    </p>
+    <p class="services__text">Исповедуем принципы минимализма и
+      чистоты. Ставим математический расчет превыше креатива. Работаем
+      не покладая рук, как роботы.
+    </p>
+    <h2 class="services__title">Выполняем заказы на разработку:</h2>
+    <ul class="services__list">
+      <li class="services__item">Веб-сайтов любой сложности  </li>
+      <li class="services__item">Мобильных приложений для iOS и Android  </li>
+      <li class="services__item">Слайдшоу и видео для корпоративных презентаций</li>
+    </ul>
+  </section>
+
+  <!--------statistic---------->
+
+  <section class="statistic__section">
+    <a class="statistic-logo__link">
+      <img src="images/statistic-logo/statistic-logo.jpg"
+           height="208" width="360" alt="изображение логотипа">
+    </a>
+    <p class="statistic-slogan__text">
+      с 2004 года Любим точность во всем:
+    </p>
+    <ul class="statistic__list">
+      <li class="statistic__item">
+        <p class="statistic__text">
+          146
+          <span class="statistic__span">%</span>
+        </p>
+        <p class="statistic-item__text">
+          Уровень 
+          самоотдачи
+        </p>
+      </li>
+      <li class="statistic__item">
+        <p class="statistic__text">
+          100
+          <span class="statistic__span">%</span>
+        </p>
+        <p class="statistic-item__text">
+          Соблюдение сроков
+        </p>
+      </li>
+      <li class="statistic__item">
+        <p class="statistic__text">
+          50
+          <span class="statistic__span">%</span>
+        </p>
+        <p class="statistic-item__text">
+          Минимальная  предоплата
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!--------sample--------->
+
+  <section class="sample__section">
+    <a class="sample__link" href="#">
+      <img src="images/sapmle/sample-img1.svg"
+           class="sample__img" width="199" height="68" alt="логотип эйчтиэмэль академии">
+    </a>
+    <a class="sample__link" href="#">
+      <img src="images/sapmle/sample-img2.svg"
+           class="sample__img" width="199" height="68" alt="логотип барбершоп бородинский">
+    </a>
+    <a class="sample__link" href="#">
+      <img src="images/sapmle/sample-img3.svg"
+           class="sample__img" width="199" height="68" alt="логотип пинк ">
+    </a>
+    <a class="sample__link" href="#">
+      <img src="images/sapmle/sample-img4.svg"
+           class="sample__img" width="199" height="68" alt="логотип мишка">
+    </a>
+  </section>
+
+  <!---------map------>
+
+  <section class="map__section">
+
+  </section>
+
+  <!--------modal------->
+
+  <section class="modal__section">
+    <h2 class="modal__title">NЁRDS DESIGN STUDIO</h2>
+    <address class="modal-addres">
+      191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+    </address>
+    <a class="modal-tel__link" href="tel:+78122757575">
+      тел. +7 (812) 275-75-75
+    </a>
+    <button class="modal__button" type="button">Напишите нам</button>
+  </section>
+
+  <!----------social------->
+
+  <section class="social__section">
+    <a class="social__link"></a>
+    <a class="social__link"></a>
+    <a class="social__link"></a>
+    <b class="social-slogan">Давайте дружить, это выгодно!</b>
+    <p class="social__text">Скидка 10% для друзей из социальных сетей.</p>
+  </section>
+
+</main>
 </body>
 </html>
