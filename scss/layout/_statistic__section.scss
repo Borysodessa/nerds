@@ -1,0 +1,50 @@
+.statistics__section{
+  max-width: 360px;
+}
+
+.statistics__img{
+  margin-bottom: 37px;
+}
+
+.statistics-slogan__text{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: $col-statistics-text;
+  margin-bottom: 34px;
+  margin-left: 14px;
+}
+
+.statistics__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics__item{
+  max-width: 110px;
+}
+
+.statistics__text{
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.42;
+  color: $col-statistics-text;
+  padding-right: 0;
+
+}
+
+.statistics__span{
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.54;
+  color: $col-statistics-text;
+  vertical-align: super;
+}
+
+.statistics-item__text{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: $col-statistics-item-text;
+}

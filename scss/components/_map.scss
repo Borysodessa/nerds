@@ -1,0 +1,14 @@
+.map__section{
+  position: relative;
+}
+
+.map__img{
+  position: relative;
+}
+
+.map-marker__img{
+  position: absolute;
+  top: 50px;
+  right: 350px;
+  z-index: 10;
+}

@@ -1,0 +1,23 @@
+.footer-flex__wrap{
+  display: flex;
+  justify-content: space-between;
+  min-height: 217px;
+  align-items: center;
+}
+
+.footer-slogan__text{
+  display: inline-block;
+  margin-right: 200px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  color: $col-footer-slogan-text;
+}
+
+.footer__text{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: $col-footer-text;
+}

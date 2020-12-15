@@ -1,0 +1,48 @@
+.sample__section{
+  border-bottom: $back-sample-section-border 2px solid;
+  margin-bottom: 80px;
+}
+
+.sample-flex__wrap{
+  display: flex;
+  justify-content: space-around;
+  min-height: 180px;
+  align-items: center;
+}
+
+.sample__link{
+  position: relative;
+  opacity: 0.2;
+}
+
+.sample__link::after{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  right: -44px;
+  background-color: $back-sample-border;
+  opacity: 1.0;
+}
+
+.sample__link_mishka::after{
+  display: none;
+}
+
+.sample__link_borodinsky::after{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  right: -44px;
+  top: -60px;
+  background-color: $back-sample-border;
+}
+
+.sample__link:hover{
+  opacity: 1.0;
+}
+
+.sample__link:active{
+  opacity: 0.1;
+}

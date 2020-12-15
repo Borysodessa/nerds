@@ -1,11 +1,23 @@
+
 @import "./base";
 @import "./utils/variables";
 @import "./utils/container";
-
-@import "./layout/header";
-@import "./components/main-navigation";
-@import "./layout/basket";
 @import "./utils/visually-hidden";
 
-@import "./components/slider";
 @import "./components/btn";
+@import "./components/main-navigation";
+@import "./components/slider";
+@import "./components/map";
+@import "./components/social";
+@import "./components/popup";
+
+@import "./layout/basket";
+@import "./layout/header";
+@import "./layout/features__section";
+@import "./layout/services-and-statistics";
+@import "./layout/services__section";
+@import "./layout/statistic__section";
+@import "./layout/sample__section";
+@import "./layout/contact";
+@import "./layout/footer";
+

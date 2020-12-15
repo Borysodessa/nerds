@@ -1,6 +1,9 @@
 .container{
   margin: 0 auto;
-  max-width: 1157px;
-  border-right: 1px red solid;
-  border-left: 1px red solid;
+  max-width: 1200px;
+  padding-left: 21px;
+  padding-right:21px;
+  border-right: 1px rgba(199, 219, 244, 0.57) solid;
+  border-left: 1px rgba(199, 219, 244, 0.57) solid;
+  box-sizing: border-box;
 }
