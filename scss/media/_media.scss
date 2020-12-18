@@ -1,0 +1,38 @@
+@media(max-width: 1279px){
+  .contact__section{
+    top: 5px;
+    width: 200px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .slider-advantages-slogan{
+    font-size: 30px;
+    margin-bottom: 0;
+
+  }
+
+  .slider__section .slider-advantages__text{
+    margin-bottom: 15px;
+  }
+}
+
+
+@media(max-width: 1040px){
+
+  .slider-advantages__wrap{
+    padding-top: 50px;
+  }
+
+  .features__section{
+    padding-top: 50px;
+  }
+
+  .footer-slogan__text{
+    font-size: 34px;
+  }
+
+
+
+}

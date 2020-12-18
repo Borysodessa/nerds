@@ -34,6 +34,7 @@ img {
 /*=======contact========*/
 /*=======footer============*/
 /*==========popup=========*/
+/*========slick========*/
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -92,7 +93,7 @@ img {
   background-color: #eeeeee;
 }
 
-.slider-flex__item {
+.slider__section .slider-flex__item {
   display: flex;
   justify-content: space-between;
 }
@@ -102,6 +103,11 @@ img {
   width: 400px;
 }
 
+.slider-picture__wrap {
+  outline: 2px solid red;
+  height: 100%;
+}
+
 .slider-advantages-slogan {
   font-size: 55px;
   font-style: normal;
@@ -109,9 +115,14 @@ img {
   line-height: 55px;
   margin-bottom: 25px;
   display: block;
+  width: 700px;
 }
 
-.slider-advantages__text {
+.slider-advantages-slogan_last {
+  max-width: 420px;
+}
+
+.slider__section .slider-advantages__text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -121,9 +132,12 @@ img {
 }
 
 .slider-advantages__link {
-  padding: 15px 54px 17px 54px;
-  display: inline-block;
+  display: flex;
   border-radius: 3px;
+  width: 240px;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
 }
 
 .slider-advantages__link:hover {
@@ -246,13 +260,29 @@ img {
   margin-top: 9px;
 }
 
-.popup__textarea,
+.popup__textarea:hover,
+.popup-email__input:hover,
+.popup-name__input:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.popup__textarea:focus,
+.popup-email__input:focus,
+.popup-name__input:focus {
+  border: 2px solid #000000;
+  outline: none;
+}
+
 .popup-email__input,
 .popup-name__input::placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.123;
   color: #444444;
+}
+
+.popup-email__input:invalid {
+  border: 2px solid #E74246;
 }
 
 .popup__textarea {
@@ -262,6 +292,14 @@ img {
   margin: 9px auto 47px auto;
   padding-left: 16px;
   padding-top: 16px;
+  border: 2px solid #D7DCDE;
+}
+
+.popup__textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.123;
+  color: #444444;
 }
 
 .popup__button {
@@ -609,6 +647,38 @@ img {
   font-weight: 400;
   line-height: 1.38;
   color: #444444;
+}
+
+@media (max-width: 1279px) {
+  .contact__section {
+    top: 5px;
+    width: 200px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .slider-advantages-slogan {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .slider__section .slider-advantages__text {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 1040px) {
+  .slider-advantages__wrap {
+    padding-top: 50px;
+  }
+
+  .features__section {
+    padding-top: 50px;
+  }
+
+  .footer-slogan__text {
+    font-size: 34px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
